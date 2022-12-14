@@ -1,7 +1,7 @@
 FROM ubuntu:22.04
 
 RUN apt -qq -y update
-RUN apt -qq -y install git
+RUN apt -qq -y install git nc iproute2
 
 WORKDIR /root
 RUN git clone https://github.com/pwndbg/pwndbg
